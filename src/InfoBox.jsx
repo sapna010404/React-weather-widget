@@ -32,7 +32,7 @@ export default function InfoBox({info}){
                        image={info.humidity>80?RAINY_URL: info.humidity>70?CLOUDY_URL:info.temp>17?HOT_URL:info.temp<-10?SNOW_URL:COLD_URL}
                        title="green iguana"
                      />
-                     <CardContent>
+                     <CardContent className='cardContent'>
                        <Typography gutterBottom variant="h5" component="div">
                          {info.city} &nbsp;
                          {info.humidity>80?<ThunderstormIcon></ThunderstormIcon>: 

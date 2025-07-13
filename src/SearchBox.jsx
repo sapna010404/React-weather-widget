@@ -57,8 +57,14 @@ export default function SearchBox({handleInfo}){
     return (
         <div className='SearchBox'>
             <form onSubmit={handleSubmit}>
-                <TextField id="city" label="Search City" variant="outlined" size="small" value={city} onChange={handleChange} required/> &nbsp;&nbsp;
-                <Button variant="contained" type="submit">Send</Button>
+                <TextField id="city" label="Search City" variant="outlined" size="small" value={city} onChange={handleChange} className='searchField' required/> &nbsp;&nbsp;
+                <Button variant="contained" type="submit" sx={{backgroundColor: '#33415c',
+                                                                color: '#fff',
+                                                                '&:hover': {
+                                                                    backgroundColor: '#e91e63',
+                                                                    },
+                                                                }}
+>Send</Button>
             </form>
             {error && <p style={{color:"red"}}>No such place exists!</p>}
         </div>

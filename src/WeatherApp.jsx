@@ -14,7 +14,7 @@ export default function WeatherApp(){
 
     return (
         <>
-        <h2 style={{textAlign:"center"}}>Weather App by Sapna</h2>
+        <h2 style={{textAlign:"center", color:"#001233"}}>Weather App by Sapna</h2>
         <SearchBox handleInfo={handleInfo}></SearchBox>
         <InfoBox info={Weatherinfo}></InfoBox>
         </>
