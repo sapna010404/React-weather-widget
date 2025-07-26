@@ -1,12 +1,80 @@
-# React + Vite
+# Weather App 🌤️
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple Node.js + Express-based weather app that uses the **OpenWeatherMap API** to fetch current weather information for any city. Built using **EJS templating**, **CSS styling**, and served through a clean Express server.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🔧 Features
 
-## Expanding the ESLint configuration
+- Search for weather by city name
+- Real-time temperature, condition, and weather icon
+- Responsive and minimal UI with EJS + CSS
+- Fetch data from OpenWeatherMap using Axios
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 📁 Project Structure
+
+```
+zip weather/
+├── app.js
+├── public/
+│   └── style.css
+├── views/
+│   ├── index.ejs
+│   └── partials/
+│       └── header.ejs
+└── .env (you'll create this)
+```
+
+---
+
+## 🚀 How to Run
+
+### 1. Clone the repository
+```bash
+git clone <your-repo-url>
+cd zip\ weather
+```
+
+### 2. Install dependencies
+```bash
+npm install
+```
+
+### 3. Set up your `.env` file
+Create a `.env` file in the root of the project:
+```env
+API_KEY=your_openweathermap_api_key_here
+```
+
+### 4. Run the server
+```bash
+node app.js
+```
+
+Then open your browser and go to `http://localhost:8080`
+
+---
+
+## 🧠 Technologies Used
+
+- Node.js
+- Express.js
+- Axios
+- EJS (Embedded JavaScript Templates)
+- CSS
+
+---
+
+## 🌍 API Source
+
+Data is powered by [OpenWeatherMap](https://openweathermap.org/api)
+
+---
+
+## 📌 Notes
+
+- You must sign up at OpenWeatherMap and generate an API key to use this app.
+- Don't forget to add `.env` to your `.gitignore` file.
+
